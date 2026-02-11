@@ -40,8 +40,8 @@
 
 # Авторство:
 - Яндекс Практикум (https://practicum.yandex.ru/)
-- GitHub: [@eeugene152](https://github.com)
-- Telegram: [@eemelkhovsky](https://t.me)
+- GitHub: [@eeugene152](https://github.com/eeugene152/)
+- Telegram: [@eemelkhovsky](https://t.me/eemelkhovsky/)
 
 ---
 *Проект выполнен в учебных целях.*
