@@ -62,7 +62,7 @@ header {
 .header__links-list-item {
   display: list-item;
   vertical-align: top;
-  line-height: 23px;
+  line-height: 1.28;
 }
 
 .header__link {
@@ -128,12 +128,12 @@ header {
 .header__address .contacts-item_phone {
   margin-top: 0.9px;
   margin-left: 0.2px;
-  line-height: 24px;
+  line-height: 1.33;
 }
 
 .header__address .contacts-item_email {
   padding-bottom: 1.1px;
-  line-height: 24px;
+  line-height: 1.33;
 }
 
 .header__address .contacts-item_city {
@@ -254,7 +254,7 @@ header {
   width: 334px;
   min-height: 596px;
   padding: 48px 40px;
-  line-height: 120%;
+  line-height: 1.2;
 }
 
 .card__title-link {
@@ -371,7 +371,7 @@ header {
 
 .about_auction__text p {
   width: 693px;
-  line-height: 120%;
+  line-height: 1.2;
 }
 
 .about_auction__text p:first-of-type {
@@ -424,7 +424,7 @@ footer {
   align-items: center;
   align-self: start;
   margin-top: 2px;
-  line-height: 21.2px;
+  line-height: 1.06;
   letter-spacing: -0.055em;
   list-style: none;
 }
@@ -440,6 +440,7 @@ footer {
   position: absolute;
   bottom: 1px;
   left: 1px;
+  right: 0px;
   height: 1.5px;
   background-color: currentColor;
 }
