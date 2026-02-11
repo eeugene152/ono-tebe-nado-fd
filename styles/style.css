@@ -6,6 +6,12 @@ address {
   font-style: normal;
 }
 
+.address a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
 /* общие настройки для бэкграунда */
 .background_setting {
   z-index: 0;
@@ -44,25 +50,18 @@ header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  height: 293px;
-  padding: 0 50px;
+  padding: 90px 50px;
   font-size: 18px;
 }
 
 .header__menu-list {
   display: flex;
   align-items: baseline;
-  gap: 27px;
+  gap: 33px;
   margin-top: -4px;
   padding-right: 2px;
   padding-left: 0.2px;
   list-style-type: circle;
-}
-
-.header__links-list-item {
-  display: list-item;
-  vertical-align: top;
-  line-height: 1.28;
 }
 
 .header__link {
@@ -71,33 +70,13 @@ header {
   line-height: 1.2;
 }
 
-.header__link_active {
+.header__links-list-item_no-bullit {
   list-style-type: none;
 }
 
 .header__link_not-active a {
-  position: relative;
   display: inline;
-  text-decoration: none;
-}
-
-.header__link_not-active a::after {
-  content: "";
-  position: absolute;
-  right: -3px;
-  bottom: -1px;
-  left: -1px;
-  height: 1px;
-  background-color: currentColor;
-}
-
-.header__links-list-item:nth-child(2) a {
-  margin-right: 3px;
-  margin-left: 4.5px;
-}
-
-.header__links-list-item:nth-child(3) a {
-  margin-left: 5px;
+  text-underline-offset: 4px;
 }
 
 .header__logo {
@@ -116,31 +95,8 @@ header {
 .header__address {
   justify-self: end;
   max-width: 240px;
-  padding-bottom: 3px;
-}
-
-.address a {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 4px;
-}
-
-.header__address .contacts-item_phone {
-  margin-top: 0.9px;
-  margin-left: 0.2px;
+  padding: 0 25px 3px 0;
   line-height: 1.33;
-}
-
-.header__address .contacts-item_email {
-  padding-bottom: 1.1px;
-  line-height: 1.33;
-}
-
-.header__address .contacts-item_city {
-  margin-left: 0.8px;
-  padding-right: 25px;
-  padding-bottom: 1px;
-  line-height: 1.35;
 }
 
 /* main ***************************************MAIN**********************************************/
@@ -215,7 +171,7 @@ header {
 
 .bet-button {
   width: 256px;
-  height: 51px;
+  min-height: 51px;
   border: 1px solid #fff;
   color: inherit;
   font-family: inherit;
@@ -228,14 +184,12 @@ header {
 
 /* блок ***************************************LOTS**********************************************/
 .lots {
-  min-height: 723px;
   margin-top: 180px;
   margin-bottom: 120px;
 }
 
 .lots__heading {
-  height: 74px;
-  padding: 1px 40px 0;
+  padding: 1px 40px 26px;
 }
 
 .lots__card-list {
@@ -249,16 +203,28 @@ header {
 .lots__card-list-item {
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   width: 334px;
   min-height: 596px;
-  padding: 48px 40px;
-  line-height: 1.2;
 }
 
-.card__title-link {
-  display: block;
+.card-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 48px 40px;
+  text-decoration: none;
+}
+
+.card__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card__title {
+  margin: 0;
   padding-top: 0.1px;
   font-weight: 700;
   font-size: 22px;
@@ -272,27 +238,7 @@ header {
 }
 
 .card__text {
-  display: flex;
-  align-items: flex-end;
-  height: 100%;
-}
-
-.custom-dash {
-  position: relative;
-  display: inline-block;
-  width: 20px;
-  margin: 0 -3.5px 0 1.5px;
-  vertical-align: middle;
-}
-
-.custom-dash::before {
-  content: "";
-  position: absolute;
-  right: 5px;
-  bottom: -0.01em;
-  left: 0;
-  height: 1.2px;
-  background-color: currentColor;
+   margin-top: auto;
 }
 
 .card_type_film {
@@ -310,10 +256,8 @@ header {
 .lots__look-more {
   display: flex;
   align-items: flex-end;
-  height: 53px;
-  margin-top: 3px;
-  padding-bottom: 2px;
-  padding-left: 40px;
+  margin-top: 5px;
+  padding: 28px 0 0 40px;
   color: #000;
 }
 
@@ -328,7 +272,6 @@ header {
   display: grid;
   grid-template-columns: 334px 1fr;
   gap: 25px;
-  min-height: 595px;
   margin-bottom: 165.5px;
 }
 
@@ -355,13 +298,11 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  min-height: 449px;
   margin-top: 131px;
   margin-bottom: 13px;
 }
 
 .about_auction__title {
-  height: 47px;
   margin-top: 3px;
 }
 
@@ -388,8 +329,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 1100px;
-  height: 180px;
-  padding: 0 50px;
+  padding: 0 50px 82px 50px;
 }
 
 .footer__address {
@@ -404,45 +344,21 @@ footer {
   line-height: 1.35;
 }
 
-.footer__address .contacts-item_phone {
-  line-height: 1.25;
-}
-
-.footer__address .contacts-item_email {
-  margin-left: -0.3px;
-}
-
-.footer__address .contacts-item_city {
-  margin-left: 1px;
-  line-height: 1.4;
-}
-
 .footer__menu-list {
   display: flex;
   flex-direction: column;
   justify-self: center;
   align-items: center;
   align-self: start;
-  margin-top: 2px;
-  line-height: 1.06;
+  margin-top: 5px;
+  line-height: 1.0;
   letter-spacing: -0.055em;
   list-style: none;
 }
 
 .footer__menu-link_not-active a {
-  position: relative;
-  display: inline;
-  text-decoration: none;
-}
-
-.footer__menu-link_not-active a::after {
-  content: "";
-  position: absolute;
-  bottom: 1px;
-  left: 1px;
-  right: 0px;
-  height: 1.5px;
-  background-color: currentColor;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
 }
 
 .footer__social-list {
@@ -451,6 +367,10 @@ footer {
   justify-content: space-between;
   width: 240px;
   padding-top: 2px;
+}
+
+.footer__social-list-item {
+  list-style: none;
 }
 
 .footer__social-icon {
