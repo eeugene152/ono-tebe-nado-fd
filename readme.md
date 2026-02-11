@@ -2,10 +2,11 @@
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
 <h3 align="center">Front learner from Russia 🇷🇺</h3>
 
-Адрес на GIT
-https://github.com/eeugene152/eeugene152/ono-tebe-nado-fd
 
-# Проект «Оно тебе надо» — лендинг аукциона (учебный)
+# Проект «Оно тебе надо» — лендинг аукциона
+## *(учебный)
+### Адрес на GIT
+### https://github.com/eeugene152/eeugene152/ono-tebe-nado-fd
 
 ![Превью проекта](./images/preview.png)
 
