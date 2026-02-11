@@ -43,5 +43,5 @@
 - GitHub: [@eeugene152](https://github.com/eeugene152/)
 - Telegram: [@eemelkhovsky](https://t.me/eemelkhovsky/)
 
----
+-----
 *Проект выполнен в учебных целях.*
