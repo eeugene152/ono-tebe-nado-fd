@@ -6,7 +6,7 @@
 # Проект «Оно тебе надо» — лендинг аукциона
 ## *(учебный)
 ### Адрес на GIT
-### https://github.com/eeugene152/eeugene152/ono-tebe-nado-fd
+### https://github.com/eeugene152/ono-tebe-nado-fd
 
 ![Превью проекта](./images/preview.png)
 
